@@ -72,8 +72,7 @@ var chainedfk = {
                 $selectField.width(width + 'px');
             }
 
-            // Prevent Infinity Loop
-            // $selectField.trigger('change');
+            $selectField.trigger('change');
         });
     },
     init: function (chainfield, url, id, init_value, empty_label, auto_choose) {
